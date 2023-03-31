@@ -1,0 +1,51 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+
+\title{Newton-Raphson Method}
+
+\date{}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \frametitle{Group Members}
+    \begin{itemize}
+        \item Eric Salamba  SCT211-0003/2021
+        \item DERRICK GACHERU  SCT211-0004/2021
+        \item KAIRU CYRUS  SCT211-0024/2021
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Newton-Raphson Method}
+    The Newton-Raphson method is a popular numerical method used to find the roots of a given function. Given an initial guess $x_0$, the method iteratively improves the guess until it converges to the root of the function $f(x)$.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Algorithm}
+    The algorithm for the Newton-Raphson method is as follows:
+    \begin{enumerate}
+        \item Start with an initial guess $x_0$
+        \item Evaluate the function $f(x)$ and its derivative $f'(x)$ at $x = x_0$
+        \item Calculate the next approximation $x_1$ using the formula:
+        \begin{equation*}
+            x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}
+        \end{equation*}
+        \item Repeat steps 2 and 3 until the desired level of accuracy is achieved or a maximum number of iterations is reached.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{General formula}
+    The Newton-Raphson method can be expressed in a more general form as follows:
+    \begin{equation*}
+        x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
+    \end{equation*}
+    where $x_n$ is the $n$-th approximation of the root.
+\end{frame}
+
+\end{document}
